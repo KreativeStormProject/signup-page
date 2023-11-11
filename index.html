@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Sign-up page</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="side-img">
+            <div class=" logo-box">
+                <img src="images/logo1.png" width="50px" alt=" logo image">
+                <h1 class="logo-text"> Paradise Island</h1>
+            </div>
+        </div>
+        <div class="signup-box">
+            <form action="http://httpbin.org/post" method="post" id="signup-form">
+                <div class="form-header-box">
+                    <h2 class="text-1"> Do you want to have the best time of your life at Paradise Island? Sign Up
+                        <i>now</i> and get started </h2>
+                    <h2 class="text-1"> You know you want to</h2>
+                </div>
+                <div class="form-content-container">
+                    <div class="form-content-box">
+                        <h2>Let's Do this!</h2>
+                        <div class="input-box">
+                            <div class="label-input-group">
+                                <label for="first_name">FIRST NAME:</label>
+                                <input type="text" name="First name" id="first_name" pattern="[A-Za-z]+" required>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <div class="label-input-group">
+                                <label for="last_name">LAST NAME:</label>
+                                <input type="text" name="Last name" id="last_name" pattern="[A-Za-z]+" required>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <div class="label-input-group">
+                                <label for="email">EMAIL:</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <div class="label-input-group">
+                                <label for="phone_no">PHONE NUMBER:</label>
+                                <input type="number" name="phone_no" id="phone_no" pattern="[+]\d+" title="Please enter a valid phone number" required>
+                                <span class="tel-text">Please enter + sign follow by country code and phone number</span>
+
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <div class="label-input-group">
+                                <label for="password">PASSWORD:</label>
+                                <input type="password" name="password" id="password" pattern="^(?=.*[A-Za-z0-9])(?=.*[\W_]).{5,}$" title="password must be 5 or more characters including one cap letter, number and symbo " required>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <div class="label-input-group">
+                                <label for="confirm_password">CONFIRM PASSWORD:</label>
+                                <input type="password" name="confirm_password" id="confirm_password" required>
+                                <span id="password-match-error" class="error-message">Passwords do not match</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-footer-box">
+                    <button class="create-button" id="create-button"  type="submit">Create Account</button>
+                    <p> Already have an account? <a href="#">Login</a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
